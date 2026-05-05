@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav>
+        <a href="/">Home</a> | <a href="/quiz">Quiz</a> |
+        <a href="/vehicletype">Vehicle Type</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1>About This Express.js App</h1>
+      <p>
+        This is a simple Express.js quiz application with Node.js and EJS
+        templates.
+      </p>
+      <ul>
+        <li>Routes are defined in <code>routes/quiz.js</code></li>
+        <li>API logic is in <code>controllers/quizController.js</code></li>
+        <li>Front-end script is <code>public/js/quiz.js</code></li>
+        <li>Static assets are served from <code>public/</code></li>
+      </ul>
+      <p>
+        Visit the <a href="/start">Start</a> page to learn how it integrates
+        with OpenTDB.
+      </p>
+      <p>Return to quiz: <a href="/">Home</a></p>
+    </div>
+  </body>
+</html>
