@@ -16,4 +16,14 @@ router.get('/quiz', (req, res) => {
   res.render('quiz', { title: 'Quiz - Express Quiz App' })
 })
 
+// Default route: redirect to home page
+router.get('/contact', (req, res) => {
+  res.render('contact', { title: 'Contact - Express Quiz App' })
+})
+
+// Default route: redirect to home page
+router.get('/vehicletype', (req, res) => {
+  res.render('vehicletype', { title: 'Vehicle Type - Express Quiz App' })
+})
+
 module.exports = router
