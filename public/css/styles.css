@@ -1,9 +1,35 @@
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f5f5f5;
+}
+
+.homepage-bg {
+    background-image: url('/pics/1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f4f4f4; 
+    min-height: 100vh;
+    margin: 0;
+}
+
+.shop-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    padding: 10px;
 }
 
 .site-header {
@@ -27,7 +53,7 @@ body {
 }
 
 .container {
-  background: white;
+  background: rgba(255, 255, 255, 0.582);
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -62,6 +88,30 @@ input[type="number"] {
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.start-quiz-btn {
+  background-color: #007bff; 
+  color: white !important;   
+  padding: 12px 30px;         
+  border-radius: 5px;  
+  text-decoration: none;      
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block; 
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.start-quiz-btn:hover {
+  background-color: #0056b3; 
+  transform: translateY(-2px); 
+  text-decoration: none;
+}
+
+.start-quiz-btn:active {
+  transform: translateY(0);
 }
 
 button {
@@ -134,6 +184,121 @@ button:hover {
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 10px;
+}
+
+.vehicle-class-section {
+    margin-bottom: 60px; 
+    padding-top: 20px;
+}
+
+.class-title {
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #1a237e; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.vehicle-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card-image {
+    background: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 20px;
+    background: #1a237e; 
+    color: white;
+}
+
+.vehicle-name {
+    margin: 0 0 10px 0;
+    border-left: 3px solid #fff;
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.vehicle-description {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.social-media-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px; 
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.facebook { 
+  background-color: #1877F2; 
+}
+
+.twitter { 
+  background-color: #1DA1F2; 
+}
+
+.instagram { 
+  background-color: #E4405F; 
+}
+
+.social-btn:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    filter: brightness(1.1); 
+    color: white;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.site-footer p {
+    color: #1606fc; 
+    font-weight: 800; 
+    margin: 0;
 }
 
 @keyframes spin {

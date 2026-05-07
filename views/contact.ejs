@@ -6,30 +6,89 @@
     <title><%= title %></title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
-  <body>
+  <body class="homepage-bg">
+    
     <header class="site-header">
-      <nav>
-        <a href="/">Home</a> | <a href="/quiz">Quiz</a> |
-        <a href="/contact">Contact</a>
-      </nav>
+        <div class="logo-container">
+            <img src="/pics/123.avif" alt="Logo" class="shop-logo">
+        </div>
+
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/vehicletype">Vehicle Type</a> 
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </nav>
     </header>
+
     <div class="container">
-      <h1>About This Express.js App</h1>
-      <p>
-        This is a simple Express.js quiz application with Node.js and EJS
-        templates.
-      </p>
-      <ul>
-        <li>Routes are defined in <code>routes/quiz.js</code></li>
-        <li>API logic is in <code>controllers/quizController.js</code></li>
-        <li>Front-end script is <code>public/js/quiz.js</code></li>
-        <li>Static assets are served from <code>public/</code></li>
-      </ul>
-      <p>
-        Visit the <a href="/start">Start</a> page to learn how it integrates
-        with OpenTDB.
-      </p>
-      <p>Return to quiz: <a href="/">Home</a></p>
+      <main class="container">
+          <section class="contact-header">
+              <h1>Contact Us</h1>
+              <p>Do you have questions about our vehicle trivia and Quiz? Here are the ways you can reach us.</p>
+          </section>
+
+          <section class="contact-info">
+              <h2>Contact Info</h2>
+              <h3>John Rommel T. Patriarca</h3>
+              <p><strong>Email:</strong> jrpatriarca17@gmial.com, <strong>Phone:</strong> +63 909 697 9067, <strong>Address:</strong> Manila, Philippines</p>
+              <h3>Cyril Nero S. Maligaya</h3>
+              <p><strong>Email:</strong> cyrilneros@gmail.com, <strong>Phone:</strong> +63 967 473 6972, <strong>Address:</strong> Manila, Philippines</p>
+              <h3>Hancell A. Jumao-as</h3>
+              <p><strong>Email:</strong> swordparkour@gmail.com, <strong>Phone:</strong> +63 963 876 6570, <strong>Address:</strong> Manila, Philippines</p>
+          </section>
+
+          <hr>
+
+          <section class="faq-section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+              <div class="faq-item">
+                  <p class="question">Q: What categories are covered in the quiz?</p>
+                  <p class="answer">A: The quiz includes a wide range of topics such as Land Vehicles (cars and motorcycles), Aircrafts, Watercrafts, and the general history of transportation.</p>
+              </div>
+
+              <div class="faq-item">
+                  <p class="question">Q: Do I need to create an account to take the quiz?</p>
+                  <p class="answer">A: No, you can start the quiz immediately as a guest. However, creating an account may allow you to track your high scores in the future.</p>
+              </div>
+
+              <div class="faq-item">
+                  <p class="question">Q: Can I retake the quiz if I fail?</p>
+                  <p class="answer">A: Definitely! You can retake the quiz as many times as you like to improve your score and learn more about different vehicles.</p>
+              </div>
+
+              <div class="faq-item">
+                  <p class="question">Q: Is the quiz mobile-friendly?</p>
+                  <p class="answer">A: Yes, our portal is designed to be fully responsive, meaning you can enjoy the trivia on your smartphone, tablet, or desktop.</p>
+              </div>
+
+              <div class="faq-item">
+                  <p class="question">Q: How are the scores calculated?</p>
+                  <p class="answer">A: Scores are usually based on the number of correct answers. Some advanced levels may also factor in how quickly you complete the quiz!</p>
+              </div>
+          </section>
+
+          <hr>
+
+          <section class="social-media">
+              <h2>Follow Us</h2>
+              <div class="social-links">
+                  <a href="#" class="social-btn facebook">Facebook</a>
+                  <a href="#" class="social-btn twitter">Twitter</a>
+                  <a href="#" class="social-btn instagram">Instagram</a>
+              </div>
+          </section>
+
+          <p>
+            Visit the <a href="/start">Start</a> page to learn how it integrates
+            with OpenTDB.
+          </p>
+      </main>
     </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 CJH-VEHICLE QUIZ</p>
+    </footer>
+
   </body>
 </html>
