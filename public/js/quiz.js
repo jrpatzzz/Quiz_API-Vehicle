@@ -10,27 +10,9 @@ function decodeHtml(html) {
     return txt.value;
 }
 
-async function loadCategories() {
-    try {
-        const response = await fetch("/api/quiz/categories")
-        const data = await response.json()
-        if (data.success) {
-            const categorySelect = document.getElementById("category")
-            data.categories.forEach((category) => {
-                const option = document.createElement("option")
-                option.value = category.id
-                option.textContent = category.name
-                categorySelect.appendChild(option)
-            })
-        }
-    } catch (error) {
-        console.error("Error loading categories:", error)
-    }
-}
-
 async function getQuestions() {
     const amount = document.getElementById("amount").value
-    const category = document.getElementById("category").value
+    const category = 28;
     const difficulty = document.getElementById("difficulty").value
 
     const container = document.getElementById("quiz-container")
@@ -87,7 +69,6 @@ function displaySingleQuestion() {
 questionDiv.innerHTML = `
     <h3>Question ${currentIndex + 1} of ${currentQuestions.length}: ${decodeHtml(question.question)}</h3>
     <div class="question-info">
-        <span><strong>Category:</strong> ${question.category}</span>
         <span><strong>Difficulty:</strong> ${question.difficulty}</span>
     </div>
     <div class="answers">
@@ -214,7 +195,6 @@ function resetQuiz() {
     clearInterval(timer);
 }
 
-document.addEventListener("DOMContentLoaded", loadCategories);
 const startBtn = document.getElementById('start-quiz-btn');
 const resetBtn = document.getElementById('reset-quiz-btn');
 if (startBtn) startBtn.addEventListener('click', getQuestions);
